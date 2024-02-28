@@ -1,0 +1,21 @@
+Personaje(
+-Stats(Vida)
+-Hueco/No hueco (Sistema de ataques)
+)
+Boss(
+-informacion
+-combate(Si acierta ataque, daño,Alma que devuelve,debil a...)
+)
+Zonas(
+-Info
+Objetos{
+-Armas(Info,daño,tipo)
+-Armaduras(info)
+-Anillos(info)
+-Arcos(daño,info)
+-Hechizos(indo,daño,tipo,usos)
+}
+NPC(
+Info
+)
+
