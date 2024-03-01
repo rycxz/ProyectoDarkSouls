@@ -12,11 +12,14 @@ public class Personaje {
 	private String sexo;
 	private String clase;
 	private int vida;
+	private int ataque;
 	
-	public Personaje(String nombre, String sexo, String clase) {
+	public Personaje(String nombre, String sexo, String clase,int ataque) {
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.clase = clase;
+		this.ataque = ataque;
+		
 	}
 	/**
 	 * 
@@ -27,9 +30,11 @@ public class Personaje {
 	public  void clasesPersonajes(String clases) {
 		String[] clasesPersonaje = {"Guerrero","Caballero","Vagabundo","Ladron","Bandio","Cazador","Hechizero","Piromantico","Clerigo","Marginado"};
 		int[] vidaClases =  {300,500,250,275,400,350,150,350,200,500};
+		int[] ataqueClases =  {800,500,750,975,500,650,650,550,800,900};
 		for(int i =0;i<vidaClases.length;i++) {
 			if(clasesPersonaje[i].equals(clases)) {
 				vida=vidaClases[i];
+				ataque=ataqueClases[i];
 			}
 		}
 		
@@ -52,10 +57,18 @@ public class Personaje {
 	public void setClase(String clase) {
 		this.clase = clase;
 	}
-	@Override
-	public String toString() {
-		return "Los atributos de tu personaje son nombre=" + nombre + ", sexo=" + sexo + ", clase=" + clase + ", vida=" + vida ;
-	} 
+	public int getVida() {
+		return vida;
+	}
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+	public int getAtaque() {
+		return ataque;
+	}
+	public void setAtaque(int ataque) {
+		this.ataque = ataque;
+	}
 	
 	
 	
