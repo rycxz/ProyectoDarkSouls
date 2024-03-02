@@ -131,7 +131,7 @@ public class MenuCrearPersonaje {
 			
 		}
 		}while(numClase<0 || numClase>11);
-		
+		System.out.println();
 		
 		System.out.println("Personaje creado!");
 		System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");

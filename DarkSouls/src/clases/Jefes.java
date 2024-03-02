@@ -7,20 +7,8 @@ public class Jefes {
 	private int vida;
 	private int ataque;
 	
-	
-	
-	public Jefes(String nombre, String tipo, String informacionBreve) {
-		this.nombre = nombre;
-		this.tipo = tipo;
-		this.informacionBreve = informacionBreve;
+	public Jefes() {
 	}
-
-	public Jefes(String nombre, String tipo, String informacionBreve,int vida,int ataque) {
-		this(nombre,tipo,informacionBreve);
-		this.vida = vida;
-		this.ataque=ataque;
-	}
-
 	public String getNombre() {
 		return nombre;
 	}
@@ -53,6 +41,20 @@ public class Jefes {
 	public void setAtaque(int ataque) {
 		this.ataque = ataque;
 	}
+	public Jefes(String nombre, String tipo, String informacionBreve, int vida, int ataque) {
+
+		this.nombre = nombre;
+		this.tipo = tipo;
+		this.informacionBreve = informacionBreve;
+		this.vida = vida;
+		this.ataque = ataque;
+	}
+	@Override
+	public String toString() {
+		return "Jefes [nombre=" + nombre + ", tipo=" + tipo + ", informacionBreve=" + informacionBreve + ", vida="
+				+ vida + ", ataque=" + ataque + "]";
+	}
+	
 	
 	
 

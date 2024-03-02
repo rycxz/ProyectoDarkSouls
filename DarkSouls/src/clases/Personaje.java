@@ -14,13 +14,21 @@ public class Personaje {
 	private int vida;
 	private int ataque;
 	
-	public Personaje(String nombre, String sexo, String clase,int ataque) {
+	public Personaje(String nombre, String sexo, String clase) {
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.clase = clase;
-		this.ataque = ataque;
-		
 	}
+	
+	public Personaje(String nombre, String sexo, String clase, int vida, int ataque) {
+		super();
+		this.nombre = nombre;
+		this.sexo = sexo;
+		this.clase = clase;
+		this.vida = vida;
+		this.ataque = ataque;
+	}
+
 	/**
 	 * 
 	 * @param clases

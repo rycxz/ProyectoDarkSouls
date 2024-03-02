@@ -18,18 +18,23 @@ import clases.Jefes;
 import clases.Personaje;
 import menus.MenuCrearPersonaje;
 import menus.MenuInfoBoses;
-import muestroDatos.SalidaDatos;
+
 
 public class Principal {
 
 	public static void main(String[] args) {
+		Scanner numerosMenuPrincipal = new Scanner(System.in);
 		System.out.println("Lo primero vamos a crear tu personaje!");
 		Personaje personajePrincipal = MenuCrearPersonaje.crearPersonaje();
 		System.out.println();
 		//damos de alta todos los jefes
 		Jefes[] todosJefes = CargaDatosJefes.cargarContenidoJefes();
 		System.out.println();
-		Scanner numerosMenuPrincipal = new Scanner(System.in);
+		for (int i = 0; i < 23; i++) {
+			todosJefes[i].toString();
+		}
+	
+		
 		int numMenu=0;
 		do {
 		System.out.println("Opciones a elegir:");
@@ -46,7 +51,9 @@ public class Principal {
 			break;
 		case 3:
 			//acabr metodo, falta cosas
-			MenuInfoBoses.menuBoses();
+			
+			MenuInfoBoses.menuBoses(todosJefes);
+			
 			break;
 		case 4:
 			break;
