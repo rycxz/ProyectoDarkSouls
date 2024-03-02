@@ -5,13 +5,21 @@ import java.util.Scanner;
 import cargaDatos.CargaDatosJefes;
 import clases.Jefes;
 import salidaDatos.SalidaDatosTodoTipo;
-
+/**
+ * 
+ * @author recur
+ * 
+ * metodo donde se muestra el munu del aprtdo de los boses
+ * y la llamda a distintos metoodos 
+ *
+ */
 public class MenuInfoBoses {
 	static Scanner numerosMenu = new Scanner(System.in);
+	static Scanner buscarPalabras = new Scanner(System.in);
 	public static void menuBoses(Jefes[] todosJefes) {
 		System.out.println();
-		System.out.println("-----------------------------------------------------------------"
-				+ "-----------------------------------------------------------------------------------------------------------------");
+		System.out.println("--------------------------------------"
+				+ "-----------------------------------------------------------");
 		int numJefes=90;
 		do {
 			System.out.println("Que quieres hacer?");
@@ -22,18 +30,23 @@ public class MenuInfoBoses {
 			numJefes= numerosMenu.nextInt();
 			switch(numJefes) {
 			case 1:
-				System.out.println("-----------------------------------------------------------------"
-						+ "-----------------------------------------------------------------------------------------------------------------");
+				System.out.println("-----------------------------------------"
+						+ "----------------------------------------------------------------------");
 				SalidaDatosTodoTipo.mostrarDatosJefes(todosJefes);
 				break;
 			case 2:
-				System.out.println("-----------------------------------------------------------------"
-						+ "-----------------------------------------------------------------------------------------------------------------");
-				
+				System.out.println("------------------------------------"
+						+ "----------------------------------------------------------------------");
+				System.out.println("Introdce el nombre del jefe que quiere buscar: ");
+				String nombreJefeBuscar = buscarPalabras.nextLine();
+				SalidaDatosTodoTipo.buscarJefesNombre(todosJefes, nombreJefeBuscar);
 				break;
 			case 3:
-				System.out.println("-----------------------------------------------------------------"
-						+ "-----------------------------------------------------------------------------------------------------------------");
+				System.out.println("------------------------------------------"
+						+ "----------------------------------------------------------------------------------");
+				System.out.println("Introdce el tipo del jefe que quiere buscar: ");
+				String tipoJefeBuscar = buscarPalabras.nextLine();
+				SalidaDatosTodoTipo.buscarJefesTipo(todosJefes, tipoJefeBuscar);
 			
 			case 4:
 				System.out.println("Ha salido!");
@@ -43,6 +56,8 @@ public class MenuInfoBoses {
 				
 			}
 		}while (numJefes !=0);
+		
 	}
+
 
 }
