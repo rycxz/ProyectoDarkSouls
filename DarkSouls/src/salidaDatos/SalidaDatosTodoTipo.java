@@ -7,8 +7,8 @@ import clases.Jefes;
 public class SalidaDatosTodoTipo {
 	static Scanner numeros = new Scanner(System.in);
 	/**
-	 * aqui creamos los jefes para poder motrarlos y hacemos un for para mostrar
-	 * todos los jefes
+	 * aqui creamos los jefes para poder mostrarlos y hacemos un "for"
+	 * para mostrar todos los jefes en orden
 	 */
 	public static void mostrarDatosJefes(Jefes[] todosJefes) {
 		for (int i = 0; i < 23; i++) {
@@ -82,6 +82,31 @@ public class SalidaDatosTodoTipo {
 				}
 			}
 		}
+	
+	}
+	
+	//hacemos lo mismo pero que devuelva el objeto
+	public static Jefes combatirJefesNombre(Jefes[] todosJefes,String nombreJefeBuscar) {
+		for (int i = 0; i < todosJefes.length; i++) {
+			if(todosJefes[i] != null) {
+				if(todosJefes[i].getNombre().equalsIgnoreCase(nombreJefeBuscar)) {
+					return todosJefes[i];
+				}
+			}
+		}
+		return null;
+	
+	}
+	
+	public static Jefes combatirJefesTipo(Jefes[] todosJefes,String tipoJefeBuscar) {
+		for (int i = 0; i < todosJefes.length; i++) {
+			if(todosJefes[i] != null) {
+				if(todosJefes[i].getTipo().equalsIgnoreCase(tipoJefeBuscar)) {
+					return todosJefes[i];
+				}
+			}
+		}
+		return null;
 	
 	}
 	

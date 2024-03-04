@@ -8,11 +8,11 @@ public class CargaDatosJefes {
 	 * 
 	 * @return jefesTotales
 	 * 
-	 *         para este metodo he creado nombre,tipo,informacionBreve,vida y
-	 *         aqtaque en orden asi se facilita la isercion de datos para la
-	 *         creacion del obejto priermo comprbomnos que el espacio este vacio y
-	 *         depues usamos el ocnstructor creado para la ifnoramcion y depues le
-	 *         atribuyimo la vida y el atque para el combate
+	 *         para este método he creado nombre,tipo,informacionBreve,vida y
+	 *         ataque en orden así se facilita la inserción de los  datos para la
+	 *         creación del objetivo, primero comprobamos que el espacio este vacio y
+	 *         depués usamos el constuctor creado para la informacion y depués le
+	 *         atribuimos la vida y el ataque para el combate
 	 */
 	
 	public static Jefes[] cargarContenidoJefes() {
@@ -22,7 +22,7 @@ public class CargaDatosJefes {
 				"Demonio Centinela", "Árbol del Caos", "Artorias el Caminante del Abismo", "Guardián del Santuario",
 				"Manus, Padre del Abismo", "Caballero Artorias", "Kalameet, el Dragón Negro",
 				"Gwyn, Señor de la Ceniza" };
-		String[] tipo = { "Demonio", "Demonio", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
+		String[] tipo = { "Demonio", ",", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
 				"Gólem de Hierro", "Caballeros", "Lobo", "Necrómaco", "Señor de los Muertos", "Espíritus oscuros",
 				"Dragón", "Demonio", "Demonio", "Entidad caótica", "Caballero corrompido", "Quimera", "Ser del Abismo",
 				"Caballero corrompido", "Dragón", "Señor de la Ceniza" };

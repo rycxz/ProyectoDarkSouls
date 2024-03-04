@@ -14,38 +14,14 @@ public class Personaje {
 	private int vida;
 	private int ataque;
 	
-	public Personaje(String nombre, String sexo, String clase) {
-		this.nombre = nombre;
-		this.sexo = sexo;
-		this.clase = clase;
-	}
+
 	
 	public Personaje(String nombre, String sexo, String clase, int vida, int ataque) {
-		super();
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.clase = clase;
 		this.vida = vida;
 		this.ataque = ataque;
-	}
-
-	/**
-	 * 
-	 * @param clases
-	 * 
-	 * al metodo le entra las clases para saber la vida que va a tener nuestro personaje
-	 */
-	public  void clasesPersonajes(String clases) {
-		String[] clasesPersonaje = {"Guerrero","Caballero","Vagabundo","Ladron","Bandio","Cazador","Hechizero","Piromantico","Clerigo","Marginado"};
-		int[] vidaClases =  {300,500,250,275,400,350,150,350,200,500};
-		int[] ataqueClases =  {800,500,750,975,500,650,650,550,800,900};
-		for(int i =0;i<vidaClases.length;i++) {
-			if(clasesPersonaje[i].equals(clases)) {
-				vida=vidaClases[i];
-				ataque=ataqueClases[i];
-			}
-		}
-		
 	}
 	public String getNombre() {
 		return nombre;

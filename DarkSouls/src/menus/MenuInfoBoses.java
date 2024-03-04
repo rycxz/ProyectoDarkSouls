@@ -9,8 +9,8 @@ import salidaDatos.SalidaDatosTodoTipo;
  * 
  * @author recur
  * 
- * metodo donde se muestra el munu del aprtdo de los boses
- * y la llamda a distintos metoodos 
+ * metodo donde se muestra el menu del apartado de los boses
+ * y la llamda a distintos metodos 
  *
  */
 public class MenuInfoBoses {
@@ -23,7 +23,7 @@ public class MenuInfoBoses {
 		int numJefes=90;
 		do {
 			System.out.println("Que quieres hacer?");
-			System.out.println("1-Informacion de todos los jefes");
+			System.out.println("1-Infromación de todos los jefes");
 			System.out.println("2-Buscar por nombre");
 			System.out.println("3-Buscar por tipo");
 			System.out.println("4-Salir");
@@ -37,7 +37,7 @@ public class MenuInfoBoses {
 			case 2:
 				System.out.println("------------------------------------"
 						+ "----------------------------------------------------------------------");
-				System.out.println("Introdce el nombre del jefe que quiere buscar: ");
+				System.out.println("Introdce el nombre del jefe que quiere buscar: (el nombre tiene que estar completo!)");
 				String nombreJefeBuscar = buscarPalabras.nextLine();
 				SalidaDatosTodoTipo.buscarJefesNombre(todosJefes, nombreJefeBuscar);
 				break;

@@ -52,8 +52,8 @@ public class Jefes {
 	@Override
 	public String toString() {
 		return " (Jefe al que buscas )\n Nombre " + nombre + " \n "
-				+" Tipo " + tipo +" \n "+ " Informacion breve " + informacionBreve +" \n "+ " Vida"
-				+ vida +" \n "+ " ataque " + ataque +" \n ";
+				+" Tipo: " + " \n" + tipo +" \n "+ " Informacion breve :"+ " \n" + informacionBreve +" \n "+ " Vida "
+				+ vida +" \n "+ " Ataque " + ataque +" \n ";
 	}
 	
 	
