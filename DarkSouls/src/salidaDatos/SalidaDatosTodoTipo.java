@@ -27,8 +27,8 @@ public class SalidaDatosTodoTipo {
 					case 1:
 
 						System.out.println(
-								"--------------------------------------------------------------"
-								+ "-----------------------------------------------------------------------------------------");
+								"------------------------------------"
+								+ "--------------------------------------------------------------");
 						System.out.println("El lore :");
 						System.out.println(todosJefes[i].getInformacionBreve());
 						System.out.println();
@@ -60,7 +60,7 @@ public class SalidaDatosTodoTipo {
 	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
 	 * @return
 	 * 
-	 * Hacemos que una vez el metyodo hay encontrado el jefe que busca el usuario lo pueda mostrar  
+	 * Hacemos que el metodo busque por el nombre del usuario 
 	 * 
 	 */
 	public static void buscarJefesNombre(Jefes[] todosJefes,String nombreJefeBuscar) {
@@ -109,6 +109,7 @@ public class SalidaDatosTodoTipo {
 		return null;
 	
 	}
+	
 	
 
 }

@@ -39,7 +39,7 @@ public class CreacionJefePersonalizado {
 		System.out.println("Ahora dime la cantidad de vida que va a tener");
 		int vida = numeros.nextInt();
 		System.out.println("");
-		System.out.println("Ahora dime el daño que va a hacer tu jefe");
+		System.out.println("Ahora dime el daño que va a hacer tu jefe (en numero)");
 		String[] tiposAtaque = { "Daño físico (40)", "cortante (70)", "perforante(110)", "contundente(250)",
 				"mágico(120)", "fuego (99)", "eléctrico (177)", "oscuro (322)", "divino (122)", "veneno(1)",
 				"tóxico (199)" };
