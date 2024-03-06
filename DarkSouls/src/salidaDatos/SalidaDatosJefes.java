@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import clases.Jefes;
 
-public class SalidaDatosTodoTipo {
+public class SalidaDatosJefes {
 	static Scanner numeros = new Scanner(System.in);
 	/**
 	 * aqui creamos los jefes para poder mostrarlos y hacemos un "for"
@@ -46,11 +46,6 @@ public class SalidaDatosTodoTipo {
 				
 			
 		}
-
-		// creacion de mostrar tu personaje
-		// creacion mostrar info clases personajes
-		// copiar y pegar con zonas y objetos
-
 	}
 	/**
 	 * 
@@ -73,6 +68,17 @@ public class SalidaDatosTodoTipo {
 		}
 	
 	}
+	/**
+	 * 
+	 * @param todosJefes 
+	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
+	 * @param tipoJefeBuscar
+	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
+	 * @return
+	 * 
+	 * Hacemos que el metodo busque por el tipo del usuario 
+	 * 
+	 */
 	
 	public static void buscarJefesTipo(Jefes[] todosJefes,String tipoJefeBuscar) {
 		for (int i = 0; i < todosJefes.length; i++) {
@@ -85,7 +91,17 @@ public class SalidaDatosTodoTipo {
 	
 	}
 	
-	//hacemos lo mismo pero que devuelva el objeto
+	/**
+	 * 
+	 * @param todosJefes 
+	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
+	 * @param nombreJefeBuscar
+	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
+	 * @return Jefes
+	 * 
+	 * metodo que devuelve un objeto para asi poder luchar contra el , el cula lo hemos buscado por el nombre
+	 * 
+	 */
 	public static Jefes combatirJefesNombre(Jefes[] todosJefes,String nombreJefeBuscar) {
 		for (int i = 0; i < todosJefes.length; i++) {
 			if(todosJefes[i] != null) {
@@ -97,6 +113,17 @@ public class SalidaDatosTodoTipo {
 		return null;
 	
 	}
+	/**
+	 * 
+	 * @param todosJefes 
+	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
+	 * @param tipoJefeBuscar
+	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
+	 * @return Jefes
+	 * 
+	 * metodo que devuelve un objeto para asi poder luchar contra el , el cual lo hemos buscado por el tipo
+	 * 
+	 */
 	
 	public static Jefes combatirJefesTipo(Jefes[] todosJefes,String tipoJefeBuscar) {
 		for (int i = 0; i < todosJefes.length; i++) {

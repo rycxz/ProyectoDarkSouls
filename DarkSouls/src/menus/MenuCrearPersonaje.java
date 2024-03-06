@@ -40,7 +40,7 @@ public class MenuCrearPersonaje {
 		System.out.println(
 				"----------------------------------------------------------------------------------------------------------------------------------------------------");
 
-		System.out.println("Digame el sexo para su personaje.");
+		System.out.println("Digame el sexo para su personaje (Hombre/Mujer.");
 		sexo = letras.nextLine();
 		Comprobaciones.comprobacionSexo(sexo);
 

@@ -15,10 +15,15 @@ import java.util.Scanner;
 
 import acciones.Combates;
 import cargaDatos.CargaDatosJefes;
+import cargaDatos.CargaDatosObjetos;
+import cargaDatos.CargaDatosZonas;
 import clases.Jefes;
+import clases.Objetos;
 import clases.Personaje;
+import clases.Zonas;
+import menuJefes.MenuInfoBoses;
+import menuZonas.MenuInfoZonas;
 import menus.MenuCrearPersonaje;
-import menus.MenuInfoBoses;
 
 
 public class Principal {
@@ -31,10 +36,10 @@ public class Principal {
 		//damos de alta a todos los jefes
 		Jefes[] todosJefes = CargaDatosJefes.cargarContenidoJefes();
 		System.out.println();
-		for (int i = 0; i < 23; i++) {
-			todosJefes[i].toString();
-		}
-	
+		//damos de alta todas las zonas
+		Zonas[] todasZonas = CargaDatosZonas.cargoZonasDatos();
+		//damos de alta todos los objetos
+		Objetos[] todosObjetos = CargaDatosObjetos.cargoDatosObjetos();
 		
 		int numMenu=0;
 		do {
@@ -50,6 +55,7 @@ public class Principal {
 			Combates.combatesContraJefes(todosJefes,personajePrincipal);
 			break;
 		case 2:
+			MenuInfoZonas.infoZonas(todasZonas);
 			break;
 		case 3:
 			MenuInfoBoses.menuBoses(todosJefes);

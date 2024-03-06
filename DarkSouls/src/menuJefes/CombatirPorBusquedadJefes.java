@@ -1,13 +1,20 @@
-package menus;
+package menuJefes;
 
 import java.util.Scanner;
 
 import acciones.CombatirContraUnJefe;
 import clases.Jefes;
 import clases.Personaje;
-import salidaDatos.SalidaDatosTodoTipo;
+import salidaDatos.SalidaDatosJefes;
 
 public class CombatirPorBusquedadJefes {
+	/**
+	 * 
+	 * @param todosJefes
+	 * @param personajePrincipal
+	 * 
+	 * metodo que busca el jefe por el nombre/tipo y combates contra el 
+	 */
 
 	public static void combatirJefesBusquedad(Jefes[] todosJefes, Personaje personajePrincipal) {
 		Scanner numeros = new Scanner(System.in);
@@ -23,7 +30,7 @@ public class CombatirPorBusquedadJefes {
 				System.out.println("("+i+")" + todosJefes[i].getNombre());
 			}
 			String nombreJefeBuscar= letras.nextLine();
-			Jefes combatirJefeNombre=SalidaDatosTodoTipo.combatirJefesNombre(todosJefes, nombreJefeBuscar);
+			Jefes combatirJefeNombre=SalidaDatosJefes.combatirJefesNombre(todosJefes, nombreJefeBuscar);
 			CombatirContraUnJefe.combateContraJefeBuscado(combatirJefeNombre, personajePrincipal);
 			break;
 		case 2:
@@ -32,7 +39,7 @@ public class CombatirPorBusquedadJefes {
 				System.out.println("("+i+")" + todosJefes[i].getTipo());
 			}
 			String tipoJefeBuscar= letras.nextLine();
-			Jefes combatirJefeTipo=SalidaDatosTodoTipo.combatirJefesTipo(todosJefes, tipoJefeBuscar);
+			Jefes combatirJefeTipo=SalidaDatosJefes.combatirJefesTipo(todosJefes, tipoJefeBuscar);
 			CombatirContraUnJefe.combateContraJefeBuscado(combatirJefeTipo, personajePrincipal);
 			break;
 			default:

@@ -22,7 +22,7 @@ public class CargaDatosJefes {
 				"Demonio Centinela", "Árbol del Caos", "Artorias el Caminante del Abismo", "Guardián del Santuario",
 				"Manus, Padre del Abismo", "Caballero Artorias", "Kalameet, el Dragón Negro",
 				"Gwyn, Señor de la Ceniza" };
-		String[] tipo = { "Demonio", ",", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
+		String[] tipo = { "Demonio","Demonio", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
 				"Gólem de Hierro", "Caballeros", "Lobo", "Necrómaco", "Señor de los Muertos", "Espíritus oscuros",
 				"Dragón", "Demonio", "Demonio", "Entidad caótica", "Caballero corrompido", "Quimera", "Ser del Abismo",
 				"Caballero corrompido", "Dragón", "Señor de la Ceniza" };

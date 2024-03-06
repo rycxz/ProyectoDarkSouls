@@ -42,7 +42,6 @@ public class Jefes {
 		this.ataque = ataque;
 	}
 	public Jefes(String nombre, String tipo, String informacionBreve, int vida, int ataque) {
-
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.informacionBreve = informacionBreve;

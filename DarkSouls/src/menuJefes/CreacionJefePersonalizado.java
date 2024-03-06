@@ -1,4 +1,4 @@
-package menus;
+package menuJefes;
 
 import java.util.Scanner;
 
@@ -7,13 +7,20 @@ import clases.Personaje;
 import comprobacionEntrada.Comprobaciones;
 
 public class CreacionJefePersonalizado {
+	/**
+	 * 
+	 * @param personajePrincipal
+	 * @return
+	 * 
+	 * metodo que crea un jefe personalizado fuera del array de objetos de jefes
+	 */
 
 	public static Jefes menuCombateJefePersonalizado(Personaje personajePrincipal) {
 		Scanner numeros = new Scanner(System.in);
 		Scanner letras = new Scanner(System.in);
 		System.out.println("Lo primero vamos a crear tu jefe! ");
 		System.out.println("-----------------------------------------------------------------------");
-		System.out.println("Lo primero que vamso a necesitar es un nombre: ");
+		System.out.println("Lo primero que vamos a necesitar es un nombre: ");
 		String nombreJefeCreado = letras.nextLine();
 		Comprobaciones.comprobacionNombre(nombreJefeCreado);
 		String[] tipoDeJefe = { "Demonio", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
@@ -33,13 +40,14 @@ public class CreacionJefePersonalizado {
 		String repuestaCrearLore = letras.nextLine();
 		String informacionBreve = null;
 		if (repuestaCrearLore.equalsIgnoreCase("si")) {
+			System.out.println("Pon tu descripcion: ");
 			informacionBreve = letras.nextLine();
 		}
 		System.out.println("");
 		System.out.println("Ahora dime la cantidad de vida que va a tener");
 		int vida = numeros.nextInt();
 		System.out.println("");
-		System.out.println("Ahora dime el daño que va a hacer tu jefe (en numero)");
+		System.out.println("Ahora dime el daño que va a hacer tu jefe (NUMERO)");
 		String[] tiposAtaque = { "Daño físico (40)", "cortante (70)", "perforante(110)", "contundente(250)",
 				"mágico(120)", "fuego (99)", "eléctrico (177)", "oscuro (322)", "divino (122)", "veneno(1)",
 				"tóxico (199)" };

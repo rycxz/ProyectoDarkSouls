@@ -1,10 +1,10 @@
-package menus;
+package menuJefes;
 
 import java.util.Scanner;
 
 import cargaDatos.CargaDatosJefes;
 import clases.Jefes;
-import salidaDatos.SalidaDatosTodoTipo;
+import salidaDatos.SalidaDatosJefes;
 /**
  * 
  * @author recur
@@ -32,21 +32,28 @@ public class MenuInfoBoses {
 			case 1:
 				System.out.println("-----------------------------------------"
 						+ "----------------------------------------------------------------------");
-				SalidaDatosTodoTipo.mostrarDatosJefes(todosJefes);
+				SalidaDatosJefes.mostrarDatosJefes(todosJefes);
 				break;
 			case 2:
 				System.out.println("------------------------------------"
 						+ "----------------------------------------------------------------------");
+				System.out.println("Jefes: ");
+				for(int i = 0;i<todosJefes.length;i++) {
+					System.out.println("(" + i + ") "+ todosJefes[i].getNombre() );
+				}
 				System.out.println("Introdce el nombre del jefe que quiere buscar: (el nombre tiene que estar completo!)");
 				String nombreJefeBuscar = buscarPalabras.nextLine();
-				SalidaDatosTodoTipo.buscarJefesNombre(todosJefes, nombreJefeBuscar);
+				SalidaDatosJefes.buscarJefesNombre(todosJefes, nombreJefeBuscar);
 				break;
 			case 3:
 				System.out.println("------------------------------------------"
 						+ "----------------------------------------------------------------------------------");
 				System.out.println("Introdce el tipo del jefe que quiere buscar: ");
+				for(int i = 0;i<todosJefes.length;i++) {
+					System.out.println("(" + i + ") "+ todosJefes[i].getTipo());
+				}
 				String tipoJefeBuscar = buscarPalabras.nextLine();
-				SalidaDatosTodoTipo.buscarJefesTipo(todosJefes, tipoJefeBuscar);
+				SalidaDatosJefes.buscarJefesTipo(todosJefes, tipoJefeBuscar);
 			
 			case 4:
 				System.out.println("Ha salido!");

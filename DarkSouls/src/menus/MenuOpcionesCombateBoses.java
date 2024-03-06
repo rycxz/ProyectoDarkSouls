@@ -7,6 +7,8 @@ import acciones.CombateContraTodosLosJefes;
 import acciones.CombatirContraUnJefe;
 import clases.Jefes;
 import clases.Personaje;
+import menuJefes.CombatirPorBusquedadJefes;
+import menuJefes.CreacionJefePersonalizado;
 import otros.GeneracionNumeroAleatorio;
 /**
  * 
