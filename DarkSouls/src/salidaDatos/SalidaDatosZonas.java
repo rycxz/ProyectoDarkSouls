@@ -5,22 +5,25 @@ import java.util.Scanner;
 import clases.Zonas;
 
 public class SalidaDatosZonas {
-	static Scanner numeros = new Scanner(System.in);
+	static Scanner letras = new Scanner(System.in);
 
 	/**
-	 * aqui creamos los jefes para poder mostrarlos y hacemos un "for" para mostrar
+	 * aqui buscamos los zonas para poder mostrarlos y hacemos un "for" para mostrar
 	 * todos los jefes en orden
 	 */
 	public static void mostrarDatosZonas(Zonas[] zonas) {
-		for (int i = 0; i < 23; i++) {
+		for (int i = 0; i < zonas.length; i++) {
 			if (zonas[i] != null) {
 				System.out.println("---------------"
 						+ "-----------------------------------------------------------------------------");
 				System.out.println("El nombre de la zona es " + zonas[i].getNombre());
 				System.out.println("El tipo de zona es " + zonas[i].getTipo());
-				break;
+				String repuesta = letras.nextLine() ;
+				if(repuesta.equalsIgnoreCase("Si")) {
+					System.out.println("El lore es: " + zonas[i].getLore());
+				}
+			
 			}
-
 		}
 
 	}
@@ -29,8 +32,9 @@ public class SalidaDatosZonas {
 		for (int i = 0; i < zonas.length; i++) {
 			if(zonas[i] != null) {
 				if(zonas[i].getNombre().equalsIgnoreCase(nombreZona)) {
-					System.out.println(zonas[i]);
+					System.out.println(zonas[i].toString());
 				}
+				
 			}
 		}
 
@@ -39,9 +43,10 @@ public class SalidaDatosZonas {
 	public static void mostrarDatosZonasTipo(Zonas[] zonas,String nombreTipo) {
 		for (int i = 0; i < zonas.length; i++) {
 			if(zonas[i] != null) {
-				if(zonas[i].getNombre().equalsIgnoreCase(nombreTipo)) {
-					System.out.println(zonas[i]);
+				if(zonas[i].getTipo().equalsIgnoreCase(nombreTipo)) {
+					System.out.println(zonas[i].toString());
 				}
+				
 			}
 		}
 	}

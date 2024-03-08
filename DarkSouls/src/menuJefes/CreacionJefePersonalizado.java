@@ -7,12 +7,13 @@ import clases.Personaje;
 import comprobacionEntrada.Comprobaciones;
 
 public class CreacionJefePersonalizado {
-	/**
+	/**	
+	 *   metodo que crea un jefe personalizado fuera del array de objetos de jefes
 	 * 
 	 * @param personajePrincipal
 	 * @return
 	 * 
-	 * metodo que crea un jefe personalizado fuera del array de objetos de jefes
+
 	 */
 
 	public static Jefes menuCombateJefePersonalizado(Personaje personajePrincipal) {

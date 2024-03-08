@@ -2,16 +2,17 @@ package acciones;
 
 import clases.Jefes;
 import clases.Personaje;
-import menus.MenuOpcionesCombateBoses;
+import menusCombate.MenuOpcionesCombateBoses;
 
 public class Combates {
 /**
+ * * hacemos un metodo para tener organizado el sistema de combate, este metodo 
+ * solo nos muestra los atributos de nuestra clase y llama a otro donde esta el menu
  * 
  * @param todosJefes
  * @param personajePrincipal
  * 
- * hacemos un metodo para tener organizado el sistema de combate, este metodo 
- * solo nos muestra los atributos de nuestra clase y llama a otro donde esta el menu
+ 
  */
 	public static void combatesContraJefes(Jefes[] todosJefes, Personaje personajePrincipal) {
 		System.out.println("Bienvenido a los combates " + personajePrincipal.getNombre());

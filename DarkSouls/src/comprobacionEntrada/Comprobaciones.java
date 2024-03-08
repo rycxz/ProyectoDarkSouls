@@ -7,10 +7,12 @@ public class Comprobaciones {
 
 	/**
 	 * 
+	 * solo es una comprobacion de que el dato "nombre" introducido
+	 *               por el usuario esta bien formado
+	 * 
 	 * @param nombre
 	 * 
-	 *               solo es una comprobacion de que el dato "nombre" introducido
-	 *               por el usuario esta bien formado
+	 *               
 	 */
 	public static void comprobacionNombre(String nombre) {
 		boolean esNombreValido = true;
@@ -32,11 +34,12 @@ public class Comprobaciones {
 	}
 
 	/**
+	 *  solo es una comprobacion de que el dato "sexo" introducido por el
+	 *             usuario esta bien formado
 	 * 
 	 * @param sexo
 	 * 
-	 *             solo es una comprobacion de que el dato "sexo" introducido por el
-	 *             usuario esta bien formado
+	 *            
 	 */
 	public static void comprobacionSexo(String sexo) {
 		boolean esSexoValido = false;

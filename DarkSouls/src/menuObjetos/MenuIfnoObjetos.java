@@ -1,27 +1,25 @@
-package menuZonas;
+package menuObjetos;
 
 import java.util.Scanner;
 
-import clases.Zonas;
+import clases.Objetos;
 import comprobacionEntrada.Comprobaciones;
-import salidaDatos.SalidaDatosZonas;
+import salidaDatos.SalidaDatosObjetos;
 
-public class MenuInfoZonas {
+public class MenuIfnoObjetos {
+	
 	/**
-	 * 
-	 *
-	 * @param zonas
-	 * 
-	 * menu que muestra las opciones e las zonas
+	 * menu qeu se encuentra dentro de  un metodo y sirve para mostrar el mneu de opciones de objetos
+	 * @param objetos
 	 */
-	public static void infoZonas(Zonas[] zonas) {
+	public static void infoObjetos(Objetos[] objetos) {
 		Scanner numeros = new Scanner(System.in);
 		Scanner letras = new Scanner(System.in);
-		System.out.println("Bienvenido al apartado de zonas!");
+		System.out.println("Bienvenido al apartado de objetos!");
 		System.out.println("--------------------------------------------------------------------------------------------");
 		System.out.println("");
 		System.out.println("Tienes varias opciones:");
-		int numEleccionZonas = 0;
+		int numEleccionObjetos = 0;
 		String buscarNombre ;
 		String buscarTipo ;
 		String repuesta ;
@@ -29,11 +27,12 @@ public class MenuInfoZonas {
 			System.out.println("1-Mostrar Informacion de todas las zonas (¡No parara hasta que muestre todas !)");
 			System.out.println("2-Buscar Zonas");
 			System.out.println("3-Buscar por tipo");
-			System.out.println("4-Salir");
-			numEleccionZonas=numeros.nextInt();
-			switch(numEleccionZonas) {
+			System.out.println("4-Eliminar");
+			System.out.println("5-Salir");
+			numEleccionObjetos=numeros.nextInt();
+			switch(numEleccionObjetos) {
 			case 1:
-				SalidaDatosZonas.mostrarDatosZonas(zonas);
+				SalidaDatosObjetos.mostrarDatosObjetos(objetos);
 				break;
 			case 2:
 				System.out.println("Digame el nombre por el cual quiere buscar! ");
@@ -42,14 +41,14 @@ public class MenuInfoZonas {
 				System.out.println("Quieres ver las opciones diponibles? (Si/NO)");
 				 repuesta = letras.nextLine() ;
 				if(repuesta.equalsIgnoreCase("Si")) {
-					for(int i =0;i<zonas.length;i++) {
-						System.out.println(i+". " + zonas[i].getNombre());
+					for(int i =0;i<objetos.length;i++) {
+						System.out.println(i+". " + objetos[i].getNombre());
 					}
 				}
 				System.out.println("Dime el nombre por el cual quieres buscar");
 				buscarNombre=letras.nextLine();
 				Comprobaciones.comprobacionNombre(buscarNombre);
-				SalidaDatosZonas.mostrarDatosZonasNombre(zonas,buscarNombre);
+				SalidaDatosObjetos.mostrarDatosObjetosNombre(objetos, buscarNombre);
 				break;
 			case 3:
 				System.out.println("Digame el tipo por el cual quiere buscar! ");
@@ -58,23 +57,26 @@ public class MenuInfoZonas {
 				System.out.println("Quieres ver las opciones diponibles? (Si/NO)");
 				 repuesta = letras.nextLine() ;
 				if(repuesta.equalsIgnoreCase("Si")) {
-					for(int i =0;i<zonas.length;i++) {
-						System.out.println(i+". " + zonas[i].getTipo());
+					for(int i =0;i<objetos.length;i++) {
+						System.out.println(i+". " + objetos[i].getTipo());
 					}
 				}
 				
 				
 				buscarTipo=letras.nextLine();
 				Comprobaciones.comprobacionNombre(buscarTipo);
-				SalidaDatosZonas.mostrarDatosZonasTipo(zonas,buscarTipo);
+				SalidaDatosObjetos.mostrarDatosObjetosTipo(objetos, buscarTipo);
 				break;
 			case 4:
+				MenuEliminarObjetos.eliminarMenu(objetos);
+				break;
+			case 5:
 				System.out.println("Ha salido!");
 				break;
 				default:
 					System.out.println("opcion no valida");
 			}
-		}while(numEleccionZonas !=4);
+		}while(numEleccionObjetos !=4);
 
 	}
 

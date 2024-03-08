@@ -5,14 +5,15 @@ import clases.Jefes;
 public class CargaDatosJefes {
 
 	/**
-	 * 
-	 * @return jefesTotales
-	 * 
-	 *         para este método he creado nombre,tipo,informacionBreve,vida y
+	 *   para este método he creado nombre,tipo,informacionBreve,vida y
 	 *         ataque en orden así se facilita la inserción de los  datos para la
 	 *         creación del objetivo, primero comprobamos que el espacio este vacio y
 	 *         depués usamos el constuctor creado para la informacion y depués le
 	 *         atribuimos la vida y el ataque para el combate
+	 * 
+	 * @return jefesTotales
+	 * 
+	 *       
 	 */
 	
 	public static Jefes[] cargarContenidoJefes() {

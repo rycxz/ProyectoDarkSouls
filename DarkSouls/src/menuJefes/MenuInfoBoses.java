@@ -6,11 +6,12 @@ import cargaDatos.CargaDatosJefes;
 import clases.Jefes;
 import salidaDatos.SalidaDatosJefes;
 /**
+ *  * metodo donde se muestra el menu del apartado de los boses
+ * y la llamda a distintos metodos 
  * 
  * @author recur
  * 
- * metodo donde se muestra el menu del apartado de los boses
- * y la llamda a distintos metodos 
+
  *
  */
 public class MenuInfoBoses {

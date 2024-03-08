@@ -9,11 +9,12 @@ import salidaDatos.SalidaDatosJefes;
 
 public class CombatirPorBusquedadJefes {
 	/**
+	 * 	 metodo que busca el jefe por el nombre/tipo y combates contra el 
 	 * 
 	 * @param todosJefes
 	 * @param personajePrincipal
 	 * 
-	 * metodo que busca el jefe por el nombre/tipo y combates contra el 
+
 	 */
 
 	public static void combatirJefesBusquedad(Jefes[] todosJefes, Personaje personajePrincipal) {

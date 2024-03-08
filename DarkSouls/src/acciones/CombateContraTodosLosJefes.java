@@ -9,15 +9,16 @@ import otros.GeneracionNumeroAleatorio;
 
 public class CombateContraTodosLosJefes {
 	/**
-	 * 
-	 * @param todosJefes
-	 * @param personajePrincipal
-	 * 
-	 *                           menu donde el usuario seleciona las diferentes
+	 *   menu donde el usuario seleciona las diferentes
 	 *                           opciones a la hora de pelear contra un bosss ,
 	 *                           desplegandose asi varios sub menus y el metodo no
 	 *                           acabara hasrta eque el usario muero o se pase el
 	 *                           jeugo
+	 * 
+	 * @param todosJefes
+	 * @param personajePrincipal
+	 * 
+	 *                         
 	 */
 	static Scanner saltoLinea = new Scanner(System.in);
 
@@ -102,13 +103,14 @@ public class CombateContraTodosLosJefes {
 	}
 
 	/**
+	 *  el metodo es igual que el anterior pero a
+	 *                           diferencia de este, te curas cada vez que "i" sea
+	 *                           par
 	 * 
 	 * @param todosJefes
 	 * @param personajePrincipal
 	 * 
-	 *                           el metodo es igual que el anterior pero a
-	 *                           diferencia de este, te curas cada vez que "i" sea
-	 *                           par
+	 *                          
 	 */
 	public static void PeleaBosesDificil(Jefes[] todosJefes, Personaje personajePrincipal) {
 		int vidaPersonaje = personajePrincipal.getVida();
@@ -198,10 +200,10 @@ public class CombateContraTodosLosJefes {
 
 	}
 	/**
-	 * 
+	 *  este metodo repite lo de los anteriores pero te "cura" por cada pasada del "for"
 	 * @param todosJefes
 	 * @param personajePrincipal
-	 * este metodo repite lo de los anteriores pero te "cura" por cada pasada del "for"
+	 *
 	 */
 
 	public static void PeleaBosesFacil(Jefes[] todosJefes, Personaje personajePrincipal) {

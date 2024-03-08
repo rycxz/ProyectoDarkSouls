@@ -1,4 +1,4 @@
-package menus;
+package menusCombate;
 
 import java.util.Scanner;
 
@@ -10,15 +10,14 @@ import clases.Personaje;
 import menuJefes.CombatirPorBusquedadJefes;
 import menuJefes.CreacionJefePersonalizado;
 import otros.GeneracionNumeroAleatorio;
-/**
- * 
- * @author recur
- * 
- * metodo que muestra las opciones para combatir los jefes 
- *
- */
+
 
 public class MenuOpcionesCombateBoses {
+	/**
+	 * metodo que nos muestra las disitintas opciones para los jefes
+	 * @param todosJefes
+	 * @param personajePrincipal
+	 */
 		public static  void combateBosesOpciones (Jefes[] todosJefes, Personaje personajePrincipal) {
 			Scanner numeros = new Scanner(System.in);
 			int  numOpcionesCombate =0;

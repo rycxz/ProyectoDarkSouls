@@ -64,6 +64,7 @@ public class SalidaDatosJefes {
 				if(todosJefes[i].getNombre().equalsIgnoreCase(nombreJefeBuscar)) {
 					System.out.println(todosJefes[i]);
 				}
+				
 			}
 		}
 	
@@ -86,6 +87,7 @@ public class SalidaDatosJefes {
 				if(todosJefes[i].getTipo().equalsIgnoreCase(tipoJefeBuscar)) {
 					System.out.println(todosJefes[i]);
 				}
+				
 			}
 		}
 	
@@ -108,6 +110,7 @@ public class SalidaDatosJefes {
 				if(todosJefes[i].getNombre().equalsIgnoreCase(nombreJefeBuscar)) {
 					return todosJefes[i];
 				}
+				
 			}
 		}
 		return null;
@@ -131,6 +134,7 @@ public class SalidaDatosJefes {
 				if(todosJefes[i].getTipo().equalsIgnoreCase(tipoJefeBuscar)) {
 					return todosJefes[i];
 				}
+				
 			}
 		}
 		return null;

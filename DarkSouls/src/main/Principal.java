@@ -22,8 +22,10 @@ import clases.Objetos;
 import clases.Personaje;
 import clases.Zonas;
 import menuJefes.MenuInfoBoses;
+import menuObjetos.MenuIfnoObjetos;
+import menuPersonajes.MenuCrearPersonaje;
+import menuPersonajes.MenuPersonaje;
 import menuZonas.MenuInfoZonas;
-import menus.MenuCrearPersonaje;
 
 
 public class Principal {
@@ -38,8 +40,10 @@ public class Principal {
 		System.out.println();
 		//damos de alta todas las zonas
 		Zonas[] todasZonas = CargaDatosZonas.cargoZonasDatos();
+		
 		//damos de alta todos los objetos
 		Objetos[] todosObjetos = CargaDatosObjetos.cargoDatosObjetos();
+	
 		
 		int numMenu=0;
 		do {
@@ -48,7 +52,8 @@ public class Principal {
 		System.out.println("2-Infromación zonas");
 		System.out.println("3-Infromación jefes");
 		System.out.println("4-Infromación objetos");
-		System.out.println("5-Salir");
+		System.out.println("5-Menu Personaje");
+		System.out.println("6-Salir");
 		numMenu= numerosMenuPrincipal.nextInt();
 		switch(numMenu) {
 		case 1:
@@ -62,8 +67,14 @@ public class Principal {
 			
 			break;
 		case 4:
+			MenuIfnoObjetos.infoObjetos(todosObjetos);
 			break;
 		case 5:
+			/*
+			MenuPersonaje.menuPersonaje(personajePrincipal);
+			*/
+			break;
+		case 6:
 			System.out.println("Ha salido!");
 			System.out.println();
 			System.out.println("\r\n" + 

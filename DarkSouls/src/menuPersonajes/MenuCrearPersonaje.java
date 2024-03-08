@@ -1,4 +1,4 @@
-package menus;
+package menuPersonajes;
 
 import java.util.Scanner;
 import clases.Personaje;
@@ -10,13 +10,15 @@ public class MenuCrearPersonaje {
 
 	/**
 	 * 
-	 * @return Personaje
-	 * 
-	 *         mostramos el menu de creación de personaje y le damos valor al objeto
+	 * mostramos el menu de creación de personaje y le damos valor al objeto
 	 *         de personaje
 	 * 
 	 *         y este metodo nos devuelve el objeto Personaje con todos sus
 	 *         valores ya creados utilzando su constructor
+	 * 
+	 * @return Personaje
+	 * 
+	 *         
 	 * 
 	 * 
 	 */
@@ -24,8 +26,8 @@ public class MenuCrearPersonaje {
 		String nombre;
 		String sexo;
 		String clase = null;
-		int[] vidaClases =  {300,500,250,275,400,350,150,350,200,500};
-		int[] ataqueClases =  {800,500,750,975,500,650,650,550,800,900};
+		int[] vidaClases =  {0,300,500,250,275,400,350,150,350,200,500};
+		int[] ataqueClases =  {0,800,500,750,975,500,650,650,550,800,900};
 		int vida = 0 ;
 		int ataque = 0;
 		int numClase = 0;
@@ -40,7 +42,7 @@ public class MenuCrearPersonaje {
 		System.out.println(
 				"----------------------------------------------------------------------------------------------------------------------------------------------------");
 
-		System.out.println("Digame el sexo para su personaje (Hombre/Mujer.");
+		System.out.println("Digame el sexo para su personaje (Hombre/Mujer).");
 		sexo = letras.nextLine();
 		Comprobaciones.comprobacionSexo(sexo);
 

@@ -8,11 +8,12 @@ import otros.ComprobacionMuerte;
 import otros.GeneracionNumeroAleatorio;
 public class CombateContraJefePersonalizado {
 	/**
+	 *   metodo que proporciona el combate contra el jefe creado 
 	 * 
 	 * @param jefePersonalizado
 	 * @param personajePrincipal
 	 * 
-	 * metodo que proporciona el combate contra el jefe creado 
+	
 	 */
 	public static void combateContraJefePersonalizado(Jefes jefePersonalizado,Personaje personajePrincipal) {
 		Scanner saltoLinea = new Scanner(System.in);
