@@ -15,8 +15,8 @@ public class CombateContraTodosLosJefes {
 	 *                           acabara hasrta eque el usario muero o se pase el
 	 *                           jeugo
 	 * 
-	 * @param todosJefes
-	 * @param personajePrincipal
+	 * @param todosJefes array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 * 
 	 *                         
 	 */
@@ -107,8 +107,8 @@ public class CombateContraTodosLosJefes {
 	 *                           diferencia de este, te curas cada vez que "i" sea
 	 *                           par
 	 * 
-	 * @param todosJefes
-	 * @param personajePrincipal
+	 * @param todosJefes array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 * 
 	 *                          
 	 */
@@ -201,8 +201,8 @@ public class CombateContraTodosLosJefes {
 	}
 	/**
 	 *  este metodo repite lo de los anteriores pero te "cura" por cada pasada del "for"
-	 * @param todosJefes
-	 * @param personajePrincipal
+	 * @param todosJefes  array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 *
 	 */
 

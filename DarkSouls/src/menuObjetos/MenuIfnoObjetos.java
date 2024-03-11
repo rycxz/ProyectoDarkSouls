@@ -10,7 +10,7 @@ public class MenuIfnoObjetos {
 	
 	/**
 	 * menu qeu se encuentra dentro de  un metodo y sirve para mostrar el mneu de opciones de objetos
-	 * @param objetos
+	 * @param objetos array de obejtoss ya creaso y creados 
 	 */
 	public static void infoObjetos(Objetos[] objetos) {
 		Scanner numeros = new Scanner(System.in);
@@ -24,10 +24,10 @@ public class MenuIfnoObjetos {
 		String buscarTipo ;
 		String repuesta ;
 		do {
-			System.out.println("1-Mostrar Informacion de todas las zonas (¡No parara hasta que muestre todas !)");
-			System.out.println("2-Buscar Zonas");
+			System.out.println("1-Mostrar Informacion de todas los objetos (¡No parara hasta que muestre todas !)");
+			System.out.println("2-Buscar objetos");
 			System.out.println("3-Buscar por tipo");
-			System.out.println("4-Eliminar");
+			System.out.println("4-Eliminar un objeto");
 			System.out.println("5-Salir");
 			numEleccionObjetos=numeros.nextInt();
 			switch(numEleccionObjetos) {
@@ -76,7 +76,7 @@ public class MenuIfnoObjetos {
 				default:
 					System.out.println("opcion no valida");
 			}
-		}while(numEleccionObjetos !=4);
+		}while(numEleccionObjetos !=5);
 
 	}
 

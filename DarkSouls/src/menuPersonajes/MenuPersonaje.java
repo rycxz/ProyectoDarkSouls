@@ -3,16 +3,19 @@ package menuPersonajes;
 import java.util.Scanner;
 
 import clases.Personaje;
+import comprobacionEntrada.Comprobaciones;
+import otros.CambiarAtributosPersonaje;
 
 public class MenuPersonaje {
 	static   Scanner numeros = new Scanner(System.in);
+	static  Scanner letras = new Scanner(System.in);
 	
 	/**
 	 * menu para cambiar los atributos del objeto personaje mediante llamdas a otros metodos
-	 * @param personajePrincipal
+	 * @param personajePrincipal le entra el personaje principal ya creado y cambia los atributos si asi quiere el usuario
 	 */
 	public static void menuPersonaje(Personaje personajePrincipal) {
-		 Scanner letras = new Scanner(System.in);
+		
 		
 		System.out.println("Bienvendio al menu de personaje");
 		System.out.println("---------------------------------------------------------------------");
@@ -82,7 +85,7 @@ public class MenuPersonaje {
 				MenuPersonaje.cambiarAtributos(personajePrincipal);
 				break;
 			case 2:
-				personajePrincipal.toString();
+				System.out.println(personajePrincipal);
 				break;
 			case 3:
 				System.out.println("Ha salido!");
@@ -94,21 +97,36 @@ public class MenuPersonaje {
 		}while(numElegir!=3);
 		
 	}
+	/**
+	 * mendu donde el usuario le es pemitido cambiar los atibutos del personaje
+	 * @param personajePrincipal
+	 */
 	public static  void cambiarAtributos(Personaje personajePrincipal) {
 		System.out.println("Que atributo quieres cambiar?");
 		int numElegirAtributo = 0;
 		do {
 			System.out.println("1-Nombre");
+			String nombreCambiar;
 			System.out.println("2-Sexo");
+			String sexoCambiar;
 			System.out.println("3-Clase");
 			System.out.println("4-Salir");
 			numElegirAtributo=numeros.nextInt();
 			switch(numElegirAtributo) {
 			case 1:
+				System.out.println("Dime tu nuevo nombre: ");
+				nombreCambiar= letras.nextLine();
+				nombreCambiar= Comprobaciones.comprobacionNombre(nombreCambiar);
+				CambiarAtributosPersonaje.cambiarNombre(personajePrincipal, nombreCambiar);
 				break;
 			case 2:
+				System.out.println("Dime el nuevo sexo para tu personaje, recuerda que el anterior " + personajePrincipal.getSexo());
+				sexoCambiar = letras.nextLine();
+				sexoCambiar = Comprobaciones.comprobacionSexo(sexoCambiar);
+				CambiarAtributosPersonaje.cambiarSexo(personajePrincipal, sexoCambiar);
 				break;
 			case 3:
+				CambiarAtributosPersonaje.cambiarClase(personajePrincipal);
 				break;
 			case 4:
 				System.out.println("ha salido");

@@ -10,8 +10,8 @@ public class CombateContraJefePersonalizado {
 	/**
 	 *   metodo que proporciona el combate contra el jefe creado 
 	 * 
-	 * @param jefePersonalizado
-	 * @param personajePrincipal
+	 * @param jefePersonalizado  array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 * 
 	
 	 */

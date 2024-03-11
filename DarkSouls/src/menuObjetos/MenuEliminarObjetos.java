@@ -9,7 +9,7 @@ import otros.EliminarObjetos;
 public class MenuEliminarObjetos {
 	/**
 	 * 
-	 * @param objetos
+	 * @param objetos array de objetos ya creadso ya cargados 
 	 * 
 	 * metdodo que contiene un menu donde se le permite al usuario elminar varios onjetos de la lista de objetos
 	 */
@@ -41,7 +41,7 @@ public class MenuEliminarObjetos {
 					}
 				}
 				
-				
+				System.out.println("Digame el nombre del objeto por le cual quiere elminar");
 				buscarNombre=letras.nextLine();
 				Comprobaciones.comprobacionNombre(buscarNombre);
 				EliminarObjetos.eliminarDatosObjetosNombre(objetos, buscarNombre);
@@ -59,6 +59,7 @@ public class MenuEliminarObjetos {
 					}
 				}
 				
+				System.out.println("Digmae el tipo de objeto que quiere eliminar");
 				
 				 buscarTipo = letras.nextLine();
 				Comprobaciones.comprobacionNombre( buscarTipo);

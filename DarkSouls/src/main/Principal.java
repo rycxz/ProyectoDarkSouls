@@ -29,6 +29,10 @@ import menuZonas.MenuInfoZonas;
 
 
 public class Principal {
+	/**
+	 * progrma principal que hace la llamada a los distinos metodos
+	 * @param args no se sale ya creado
+	 */
 
 	public static void main(String[] args) {
 		Scanner numerosMenuPrincipal = new Scanner(System.in);
@@ -70,9 +74,8 @@ public class Principal {
 			MenuIfnoObjetos.infoObjetos(todosObjetos);
 			break;
 		case 5:
-			/*
+			
 			MenuPersonaje.menuPersonaje(personajePrincipal);
-			*/
 			break;
 		case 6:
 			System.out.println("Ha salido!");
@@ -122,9 +125,9 @@ public class Principal {
 				System.out.println("opción no valida!");
 		}
 
-		}while(numMenu!=5);
+		}while(numMenu!=6);
 		
-		
+		numerosMenuPrincipal.close();
 	}
 
 }

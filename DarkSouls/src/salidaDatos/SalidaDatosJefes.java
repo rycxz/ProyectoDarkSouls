@@ -9,6 +9,7 @@ public class SalidaDatosJefes {
 	/**
 	 * aqui creamos los jefes para poder mostrarlos y hacemos un "for"
 	 * para mostrar todos los jefes en orden
+	 * @param  todosJefes array de objeto de los jefes ya creados y cargados
 	 */
 	public static void mostrarDatosJefes(Jefes[] todosJefes) {
 		for (int i = 0; i < 23; i++) {
@@ -53,7 +54,7 @@ public class SalidaDatosJefes {
 	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
 	 * @param nombreJefeBuscar
 	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
-	 * @return
+	 * @return todosJefes array de objeto de los jefes ya creados y cargados
 	 * 
 	 * Hacemos que el metodo busque por el nombre del usuario 
 	 * 
@@ -75,8 +76,8 @@ public class SalidaDatosJefes {
 	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
 	 * @param tipoJefeBuscar
 	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
-	 * @return
-	 * 
+	 * @return todosJefes array de objeto de los jefes ya creados y cargados
+	 *  
 	 * Hacemos que el metodo busque por el tipo del usuario 
 	 * 
 	 */
@@ -99,7 +100,7 @@ public class SalidaDatosJefes {
 	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
 	 * @param nombreJefeBuscar
 	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
-	 * @return Jefes
+	 * @return todosJefes array de objeto de los jefes ya creados y cargados
 	 * 
 	 * metodo que devuelve un objeto para asi poder luchar contra el , el cula lo hemos buscado por el nombre
 	 * 
@@ -122,7 +123,7 @@ public class SalidaDatosJefes {
 	 * Introducimos el parametro par que enten los jefe que ya estan creados para si poder mostralos
 	 * @param tipoJefeBuscar
 	 * Este dato se lo pedimos al usuario para  que tengamos  la  referencia para poder buscar
-	 * @return Jefes
+	 * @return todosJefes  array de objeto de los jefes ya creados y cargados
 	 * 
 	 * metodo que devuelve un objeto para asi poder luchar contra el , el cual lo hemos buscado por el tipo
 	 * 

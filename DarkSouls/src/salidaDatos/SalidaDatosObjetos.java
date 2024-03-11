@@ -6,11 +6,14 @@ import clases.Objetos;
 
 
 public class SalidaDatosObjetos {
-	/**
-	 * aqui buscamos los objetos para poder mostrarlos y hacemos un "for" para mostrar
-	 * todos los objetos en orden
-	 */
+	
 	static Scanner letras = new Scanner(System.in);
+	/**
+	 * 
+	 * @param objetos array de objetos ya cargados 
+	 * 
+	 *  aqui buscamos los objetos para poder mostrarlos y hacemos un "for" para mostralos 
+	 */
 	public static void mostrarDatosObjetos(Objetos[] objetos) {
 		for (int i = 0; i < objetos.length; i++) {
 			if (objetos[i] != null) {
@@ -27,7 +30,13 @@ public class SalidaDatosObjetos {
 		}
 
 	}
-
+	/**
+	 * 
+	 * @param objetos array de objetos ya cargados 
+	 * @param nombreObjeto string propocionado por el usuario
+	 * 
+	 *  aqui buscamos los objetos para poder mostrarlos y hacemos un "for" para mostralos  segun el nombre proporcionado por el usuario
+	 */
 	public static void mostrarDatosObjetosNombre(Objetos[] objetos,String nombreObjeto) {
 		for (int i = 0; i < objetos.length; i++) {
 			if(objetos[i] != null) {
@@ -39,7 +48,13 @@ public class SalidaDatosObjetos {
 		}
 
 	}
-
+	/**
+	 * 
+	 * @param objetos array de objetos ya cargados 
+	 * @param nombreTipo string propocionado por el usuario
+	 * 
+	 *  aqui buscamos los objetos para poder mostrarlos y hacemos un "for" para mostralos  segun el nombre proporcionado por el usuario
+	 */
 	public static void mostrarDatosObjetosTipo(Objetos[] objetos,String nombreTipo) {
 		for (int i = 0; i < objetos.length; i++) {
 			if(objetos[i] != null) {

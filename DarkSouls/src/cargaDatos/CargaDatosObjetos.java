@@ -1,7 +1,7 @@
 package cargaDatos;
 
 import clases.Objetos;
-import clases.Zonas;
+
 
 public class CargaDatosObjetos {
 	/**
@@ -9,7 +9,7 @@ public class CargaDatosObjetos {
 	 *         programa, mediante el constructor ya creado
 	 *
 	 * 
-	 * @return Objetos[]
+	 * @return objetos los objetos ya creados y cargados
 	 * 
 	 *         
 	 */

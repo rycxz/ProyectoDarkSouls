@@ -16,7 +16,7 @@ public class MenuCrearPersonaje {
 	 *         y este metodo nos devuelve el objeto Personaje con todos sus
 	 *         valores ya creados utilzando su constructor
 	 * 
-	 * @return Personaje
+	 * @return Personaje devuelve el personaje principal ya creado con los datos
 	 * 
 	 *         
 	 * 
@@ -38,13 +38,13 @@ public class MenuCrearPersonaje {
 		System.out.println();
 		System.out.println("Digame el nombre para su personaje.");
 		nombre = letras.nextLine();
-		Comprobaciones.comprobacionNombre(nombre);
+		nombre =Comprobaciones.comprobacionNombre(nombre);
 		System.out.println(
 				"----------------------------------------------------------------------------------------------------------------------------------------------------");
 
 		System.out.println("Digame el sexo para su personaje (Hombre/Mujer).");
 		sexo = letras.nextLine();
-		Comprobaciones.comprobacionSexo(sexo);
+		sexo =Comprobaciones.comprobacionSexo(sexo);
 
 		do {
 

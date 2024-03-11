@@ -9,8 +9,8 @@ public class Combates {
  * * hacemos un metodo para tener organizado el sistema de combate, este metodo 
  * solo nos muestra los atributos de nuestra clase y llama a otro donde esta el menu
  * 
- * @param todosJefes
- * @param personajePrincipal
+ * @param todosJefes array de objeto de los jefes ya creados y cargados
+ * @param personajePrincipal objeto de personaje principal ya creado y cargado
  * 
  
  */

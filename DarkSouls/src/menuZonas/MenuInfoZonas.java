@@ -10,7 +10,7 @@ public class MenuInfoZonas {
 	/**
 	 * 
 	 *
-	 * @param zonas
+	 * @param zonas array de objetos de las zonas con todos sus arapaetros ya creados
 	 * 
 	 * menu que muestra las opciones e las zonas
 	 */

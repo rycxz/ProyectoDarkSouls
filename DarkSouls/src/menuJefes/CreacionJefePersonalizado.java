@@ -10,8 +10,8 @@ public class CreacionJefePersonalizado {
 	/**	
 	 *   metodo que crea un jefe personalizado fuera del array de objetos de jefes
 	 * 
-	 * @param personajePrincipal
-	 * @return
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
+	 * @return  jefePersonalizado devuelve el objeto del jefe creado por el usuario
 	 * 
 
 	 */
@@ -23,7 +23,7 @@ public class CreacionJefePersonalizado {
 		System.out.println("-----------------------------------------------------------------------");
 		System.out.println("Lo primero que vamos a necesitar es un nombre: ");
 		String nombreJefeCreado = letras.nextLine();
-		Comprobaciones.comprobacionNombre(nombreJefeCreado);
+		nombreJefeCreado = Comprobaciones.comprobacionNombre(nombreJefeCreado);
 		String[] tipoDeJefe = { "Demonio", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
 				"Gólem de Hierro", "Caballeros", "Lobo", "Necrómaco", "Señor de los Muertos", "Espíritus oscuros",
 				"Dragón", "Demonio", "Demonio", "Entidad caótica", "Caballero corrompido", "Quimera", "Ser del Abismo",
@@ -32,7 +32,7 @@ public class CreacionJefePersonalizado {
 		System.out.println("Para la creacion del tipo de jefe primero te muestro todos los tipos de jefes que hay");
 		String tipo = null;
 		for (int i = 0; i < tipoDeJefe.length; i++) {
-			System.out.println("Los tipos disponibles son (" + i + ") " + tipoDeJefe[i]);
+			System.out.println("Los tipos disponibles son " + tipoDeJefe[i]);
 		}
 		System.out.println("Ahora dime el tipo de tu jefe");
 		tipo = letras.nextLine();

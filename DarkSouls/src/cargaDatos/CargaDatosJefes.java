@@ -11,7 +11,7 @@ public class CargaDatosJefes {
 	 *         depués usamos el constuctor creado para la informacion y depués le
 	 *         atribuimos la vida y el ataque para el combate
 	 * 
-	 * @return jefesTotales
+	 * @return jefesTotales devuelve los jefes ya creados y cargados
 	 * 
 	 *       
 	 */
@@ -20,13 +20,13 @@ public class CargaDatosJefes {
 		String[] nombre = { "Asylum Demon", "Taurus Demon", "Bell Gargoyles", "Capra Demon", "Gaping Dragon", "Quelaag",
 				"Ceaseless Discharge", "Iron Golem", "Ornstein y Smough", "Sif, el Gran Lobo Gris", "Pinwheel",
 				"Nito, Señor de los Muertos", "Cuatro Reyes", "Seath el Descamado", "Firesage Demon",
-				"Demonio Centinela", "Árbol del Caos", "Artorias el Caminante del Abismo", "Guardián del Santuario",
-				"Manus, Padre del Abismo", "Caballero Artorias", "Kalameet, el Dragón Negro",
+				"Demonio Centinela", "Árbol del Caos", "Aroras el Caminante del Abismo", "Guardián del Santuario",
+				"Manus, Padre del Abismo", "Caballero Artoias", "Kalameet, el Dragón Negro",
 				"Gwyn, Señor de la Ceniza" };
-		String[] tipo = { "Demonio","Demonio", "Gárgolas", "Demonio", "Dragón", "Araña/Demonio", "Demonio",
-				"Gólem de Hierro", "Caballeros", "Lobo", "Necrómaco", "Señor de los Muertos", "Espíritus oscuros",
-				"Dragón", "Demonio", "Demonio", "Entidad caótica", "Caballero corrompido", "Quimera", "Ser del Abismo",
-				"Caballero corrompido", "Dragón", "Señor de la Ceniza" };
+		String[] tipo = { "Demonio Enjaulado","Demonio taurino", "Gárgolas", "Demonio carpa", "Dragón antiguo", "Araña/Demonio", "Demonio caotico",
+				"Gólem de Hierro", "Caballeros renegados", "Lobo", "Necrómaco", "Señor de los Muertos", "Espíritus oscuros",
+				"Dragón fuego", "Demonio natural", "Demonio antiguo", "Entidad caótica", "Caballero corrompido", "Quimera", "Ser del Abismo",
+				"Caballero corrompido en el caos", "Dragón sin escamas ", "Señor de la Ceniza" };
 		String[] informacionBreve = {
 				"Abandonado en el asilo, sus cadenas forjan su resentimiento. Un presagio ardiente de las adversidades venideras",
 				"Tauro, el implacable, protege la Ciudadela con furia y poder. Una barrera inicial, anunciando la cruda realidad",

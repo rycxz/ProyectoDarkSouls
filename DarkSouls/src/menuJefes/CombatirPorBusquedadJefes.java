@@ -11,8 +11,8 @@ public class CombatirPorBusquedadJefes {
 	/**
 	 * 	 metodo que busca el jefe por el nombre/tipo y combates contra el 
 	 * 
-	 * @param todosJefes
-	 * @param personajePrincipal
+	 * @param todosJefes array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 * 
 
 	 */

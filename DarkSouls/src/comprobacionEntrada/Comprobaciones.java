@@ -10,11 +10,11 @@ public class Comprobaciones {
 	 * solo es una comprobacion de que el dato "nombre" introducido
 	 *               por el usuario esta bien formado
 	 * 
-	 * @param nombre
-	 * 
+	 * @param nombre stirng mertido por el usuario
+	 *  
 	 *               
 	 */
-	public static void comprobacionNombre(String nombre) {
+	public static String comprobacionNombre(String nombre) {
 		boolean esNombreValido = true;
 		do {
 			for (int i = 0; i < nombre.length(); i++) {
@@ -30,6 +30,7 @@ public class Comprobaciones {
 				}
 			}
 		} while (esNombreValido == false);
+		return nombre;
 
 	}
 
@@ -37,11 +38,11 @@ public class Comprobaciones {
 	 *  solo es una comprobacion de que el dato "sexo" introducido por el
 	 *             usuario esta bien formado
 	 * 
-	 * @param sexo
+	 * @param sexo stirng mertido por el usuario
 	 * 
 	 *            
 	 */
-	public static void comprobacionSexo(String sexo) {
+	public static String comprobacionSexo(String sexo) {
 		boolean esSexoValido = false;
 		do {
 			for (int i = 0; i < sexo.length(); i++) {
@@ -57,6 +58,7 @@ public class Comprobaciones {
 				}
 			}
 		} while (esSexoValido == false);
+		return sexo;
 
 	}
 

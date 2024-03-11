@@ -11,8 +11,8 @@ public class CombatirContraUnJefe {
 	/** * 
 	 * metodo que proporciona el combate contra el jefe buscado 
 	 * 
-	 * @param jefePersonalizado
-	 * @param personajePrincipal
+	 * @param jefePersonalizado  array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	
 	 */
 	public static void combateContraJefeBuscado(Jefes jefeBuscado,Personaje personajePrincipal) {

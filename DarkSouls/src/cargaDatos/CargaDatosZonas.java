@@ -7,7 +7,7 @@ public class CargaDatosZonas {
 	 *  metodo que rellena solo el vector de objetos que se va a usar en el
 	 *         programa, mediante el constructor ya creado
 	 * 
-	 * @return Zonas[]
+	 * @return zonas devuelve las zonas ya creadas y cargadas
 	 * 
 	 *        
 	 */
@@ -99,31 +99,52 @@ public class CargaDatosZonas {
 						+ " a sobrevivir en las profundidades de la tierra",
 				"Túneles del Demonio: Un sistema de cavernas infernales infestado de demonios y peligros, donde los no muertos deben enfrentar"
 						+ " desafíos mortales en las entrañas de la tierra",
-
-				"Biblioteca del Archivo: Una vasta biblioteca resguardada por feroces enemigos y protegida por un inteligente guardián, desafiando a los aventureros a desentrañar sus secretos",
-				"Refugio Real de los No Muertos: Un santuario oculto donde los no muertos buscan respiro y consuelo en medio de la maldición que los aqueja",
-				"Camino del Dragón: Un sendero místico que conduce a la orden de los dragones, donde los valientes pueden buscar la transformación y la bendición draconiana",
-				"Refugio de los No Muertos: Un refugio seguro para los no muertos en su peregrinaje, donde encuentran consuelo y preparación para los desafíos por venir",
-				"Sen's Fortress: Una fortaleza imponente y llena de trampas mortales, donde los aventureros deben superar obstáculos para alcanzar nuevas alturas",
-				"Lugar del Gran Señor: Un enclave sagrado donde los no muertos buscan enfrentar al Gran Señor, encontrando desafíos y revelaciones en su camino",
-				"Pintura de Ariamis: Un mundo pintado dentro de una pintura, habitado por criaturas y desafíos únicos, donde los no muertos exploran una realidad alterna",
-				"Valle de las Dríadas: Un valle misterioso y habitado por seres etéreos, donde los aventureros deben navegar con precaución entre los secretos de la naturaleza",
-				"Refugio del Lago: Un enclave junto a un lago tranquilo, ofreciendo un respiro en medio de la oscuridad y la peligrosa travesía de los no muertos",
-				"Camino del Blanco: Un sendero desolado y hostil, lleno de desafíos y enemigos mortales que ponen a prueba la tenacidad de los no muertos",
-				"Jardines de las Raíces Oscuras: Un jardín envuelto en sombras y secretos, donde los no muertos enfrentan criaturas feroces y desentrañan la historia oculta de este oscuro rincón",
-				"Manantial del Bosque Real: Un lugar sereno y mágico en el bosque, donde los no muertos encuentran tranquilidad antes de enfrentar los peligros que acechan",
-				"Depths: Un abismo subterráneo plagado de peligros y criaturas hostiles, desafiando a los aventureros a explorar sus oscuros recovecos",
-				"Área del Asilo: Una región misteriosa y restringida, donde los no muertos son confinados al inicio de su viaje en el mundo de Dark Souls",
+				"Biblioteca del Archivo: Una vasta biblioteca resguardada por feroces enemigos y protegida por un inteligente guardián, "
+				+ "desafiando a los aventureros a desentrañar sus secretos",
+				"Refugio Real de los No Muertos: Un santuario oculto donde los no muertos buscan respiro y consuelo en medio de la maldición"
+				+ " que los aqueja",
+				"Camino del Dragón: Un sendero místico que conduce a la orden de los dragones, donde los valientes pueden buscar la"
+				+ " transformación y la bendición draconiana",
+				"Refugio de los No Muertos: Un refugio seguro para los no muertos en su peregrinaje, donde encuentran consuelo y preparación "
+				+ "para los desafíos por venir",
+				"Sen's Fortress: Una fortaleza imponente y llena de trampas mortales, donde los aventureros deben superar obstáculos para alcanzar"
+				+ " nuevas alturas",
+				"Lugar del Gran Señor: Un enclave sagrado donde los no muertos buscan enfrentar al Gran Señor, encontrando desafíos y "
+				+ "revelaciones en su camino",
+				"Pintura de Ariamis: Un mundo pintado dentro de una pintura, habitado por criaturas y desafíos únicos, donde los no muertos "
+				+ "exploran una realidad alterna",
+				"Valle de las Dríadas: Un valle misterioso y habitado por seres etéreos, donde los aventureros deben navegar con precaución"
+				+ " entre los secretos de la naturaleza",
+				"Refugio del Lago: Un enclave junto a un lago tranquilo, ofreciendo un respiro en medio de la oscuridad y la peligrosa"
+				+ " travesía de los no muertos",
+				"Camino del Blanco: Un sendero desolado y hostil, lleno de desafíos y enemigos mortales que ponen a prueba la tenacidad de "
+				+ "los no muertos",
+				"Jardines de las Raíces Oscuras: Un jardín envuelto en sombras y secretos, donde los no muertos enfrentan criaturas feroces y "
+				+ "desentrañan la historia oculta de este oscuro rincón",
+				"Manantial del Bosque Real: Un lugar sereno y mágico en el bosque, donde los no muertos encuentran tranquilidad antes de "
+				+ "enfrentar los peligros que acechan",
+				"Depths: Un abismo subterráneo plagado de peligros y criaturas hostiles, desafiando a los aventureros a explorar sus oscuros "
+				+ "recovecos",
+				"Área del Asilo: Una región misteriosa y restringida, donde los no muertos son confinados al inicio de su viaje en el mundo "
+				+ "de Dark Souls",
 				"Altar Negro: Un santuario oscuro y siniestro, vinculado a rituales y misterios profundos que desafían la comprensión",
-				"Cementerio de los Gigantes: Un camposanto vasto y peligroso, hogar de gigantes y desafíos mortales para aquellos que se aventuran entre las tumbas",
-				"Hundimientos del Abismo: Un abismo oscuro y corrupto, donde los no muertos enfrentan la oscuridad y los horrores que emanan de las profundidades",
-				"Paraje del Pacto: Un área sagrada donde los no muertos pueden sellar pactos y juramentos, enfrentando desafíos específicos para demostrar su devoción",
-				"Bosque Real: Un bosque encantado lleno de peligros y sorpresas, donde los aventureros deben enfrentar a criaturas místicas y desafíos naturales",
-				"Nueva Londo: Una ciudad sumergida maldita por espectralidad, donde los no muertos enfrentan peligros acuáticos y fantasmas vengativos",
-				"El Vacío: Un lugar enigmático que conecta dimensiones y realidades, desafiando a los no muertos a explorar sus misterios cósmicos",
-				"Reinado de la Oscuridad: Un dominio envuelto en sombras y secretos, donde los no muertos se enfrentan al poder de la oscuridad y sus desafíos implacables",
+				"Cementerio de los Gigantes: Un camposanto vasto y peligroso, hogar de gigantes y desafíos mortales para aquellos que se"
+				+ " aventuran entre las tumbas",
+				"Hundimientos del Abismo: Un abismo oscuro y corrupto, donde los no muertos enfrentan la oscuridad y los horrores que emanan "
+				+ "de las profundidades",
+				"Paraje del Pacto: Un área sagrada donde los no muertos pueden sellar pactos y juramentos, enfrentando desafíos específicos"
+				+ " para demostrar su devoción",
+				"Bosque Real: Un bosque encantado lleno de peligros y sorpresas, donde los aventureros deben enfrentar a criaturas místicas y "
+				+ "desafíos naturales",
+				"Nueva Londo: Una ciudad sumergida maldita por espectralidad, donde los no muertos enfrentan peligros acuáticos y fantasmas"
+				+ " vengativos",
+				"El Vacío: Un lugar enigmático que conecta dimensiones y realidades, desafiando a los no muertos a explorar sus misterios "
+				+ "cósmicos",
+				"Reinado de la Oscuridad: Un dominio envuelto en sombras y secretos, donde los no muertos se enfrentan al poder de la oscuridad"
+				+ " y sus desafíos implacables",
 				"Nexo Final: Un lugar crucial en la trama, vinculado al destino de los no muertos y al cierre de su travesía",
-				"Valle de los Dragones: Un valle majestuoso habitado por dragones y criaturas antiguas, donde los aventureros deben demostrar su valentía frente a los seres más poderosos" };
+				"Valle de los Dragones: Un valle majestuoso habitado por dragones y criaturas antiguas, donde los aventureros deben demostrar"
+				+ " su valentía frente a los seres más poderosos" };
 
 		int numeroZonas = nombre.length;
 

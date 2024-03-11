@@ -15,8 +15,8 @@ import otros.GeneracionNumeroAleatorio;
 public class MenuOpcionesCombateBoses {
 	/**
 	 * metodo que nos muestra las disitintas opciones para los jefes
-	 * @param todosJefes
-	 * @param personajePrincipal
+	 * @param todosJefes array de objeto de los jefes ya creados y cargados
+	 * @param personajePrincipal objeto de personaje principal ya creado y cargado
 	 */
 		public static  void combateBosesOpciones (Jefes[] todosJefes, Personaje personajePrincipal) {
 			Scanner numeros = new Scanner(System.in);

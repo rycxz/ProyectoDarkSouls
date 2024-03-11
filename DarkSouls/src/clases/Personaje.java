@@ -63,7 +63,7 @@ public class Personaje {
 
 	@Override
 	public String toString() {
-		return "Tu personaje se llama: " + nombre + " y es del sexo:  sexo " + sexo + ", es de la Clase " + clase
+		return "Tu personaje se llama: " + nombre + " y es del sexo: " + sexo + ", es de la Clase " + clase
 				+ ", tiene " + vida + " puntos de vida" + " , y hace " + ataque + " puntos de ataque ";
 	}
 
